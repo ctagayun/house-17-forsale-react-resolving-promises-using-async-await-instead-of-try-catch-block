@@ -1,0 +1,38 @@
+
+ const addHouse = () => {
+        houseDispatcher(
+          {type: "ADD_HOUSE",
+           payload: [...list,      //contains the searchedHouses state
+            {          //the below record will be appended to the end of ...list
+              objectID: 9,
+              address: "1456 Riverside Road",
+              country: "USA",
+              price: 25000000
+            },
+            {      //the below record will be appended to the end of ...list
+              objectID: 10,
+              address: "1456 Riverside Road",
+              country: "USA",
+              price: 25000000
+            },
+         ] }  
+        );
+
+
+const addHouse = () => {
+        houseDispatcher([
+          ...list, //contains the searchedHouses state
+            {      //the below record will be appended to the end of ...list
+              objectID: 9,
+              address: "1456 Riverside Road",
+              country: "USA",
+              price: 25000000
+            },
+            {      //the below record will be appended to the end of ...list
+              objectID: 9,
+              address: "1456 Riverside Road",
+              country: "USA",
+              price: 25000000
+            },
+        ], "ADD_HOUSE");
+      };
